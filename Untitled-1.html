@@ -47,6 +47,10 @@
       grid-area: info;
       background-color: blue;
 
+      .thumb:hover {
+        transform: scale(1.05);
+      }
+      
       .thumb {
         width: calc(var(--grid-info-size) - 20px);
         height: calc(var(--grid-info-size) - 20px);
@@ -72,7 +76,7 @@
         padding-top: 4rem;
         z-index: 1;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        border-radius: 90px;
+        border-radius: 40px;
         text-align: center;
         text-decoration-color: azure;
       }
@@ -86,38 +90,49 @@
 
       &:before {
         content: "";
-        background-color: rgba(0, 136, 255, 0.541);
+        background-color: rgba(255, 255, 255, 0.342);
         position: absolute;
         inset: 0;
         z-index: -1;
-
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        height: 11%;
-        margin-top: 3rem;
-        padding-top: 4rem;
-        z-index: -1;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
-
+      
       .gallery {
 
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-auto-rows: minmax(180px, 230px);
         gap: .5rem;
-
+        
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 15px;
 
         }
       }
     }
 
-    .gallery img:first-child {
+    .social {
+      grid-area: social;
+      background-color: rgb(255, 255, 255);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 112px;
+      img {
+        height: 2rem;
+        width: 2rem;
+        object-fit: cover;
+        padding: 2px;
+      }
+
+    }
+
+    .gallery a:first-child {
       grid-column: span 2;
       grid-row: span 2;
     }
@@ -126,27 +141,14 @@
       grid-column: span 2;
       grid-row: span 2;
     }
-
-    .social {
-      grid-area: social;
-      background-color: rgba(0, 136, 255, 0.541);
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-
-      img {
-        height: 2rem;
-        width: 2rem;
-        object-fit: cover;
-      }
-
+    
+    .gallery img:hover{
+        transform: scale(1.05);
     }
 
     footer {
       grid-area: footer;
-      background-color: rgba(0, 136, 255, 0.541);
+      background-color: rgb(255, 255, 255);
       padding: 7px;
     }
   </style>
@@ -185,7 +187,6 @@
        É conhecido por ser aventureiro, descontraído, confiante e ter um forte senso de justiça.
        Seus principais aliados incluem Miles "Tails" Prower, Knuckles e Amy Rose, enquanto seu 
        maior inimigo é o Dr. Eggman.
-        Em jogos 3D, ele executa ataques como o "Homing Attack" e "Light Speed Dash". 
     </section>
   </aside>
   <main>
@@ -199,20 +200,77 @@
       </p>
     </article>
     <div class="gallery">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisshS3au3g_bNNDE0yYPr7VRwkdvkTusz84RWl7INa2ML0V_L4pafzadh-vRCPXqBR7IQXzn9MKG0ZUkCTWfMky1IpTKUZf6_bt9rN9LcNNzQH8Tq6zAZLIfvRAw0w7ZVSeq8cHImyHzI/s640-rw/Sonic+Mania_20170816222752.jpg" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbnqvwibeQKD9O2Y0cMDet4gX5_gTv3Iz3CTMLM-iaLJ18u5O8Q61xe4Z4CXsxPtuzdQUdiyGsAZHNS2NJnvj_m2qqcXeQ4sLpnVMnnLNoRJyfeCWJuSxf8OCCgb68P5RTpp7ba6fbtuA/s1600/MushroomHillZone.png" alt="Image 2">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUDlO8DY9DAuVx0EVT5LNjW20Y0-M13ZfDmDKy4RF7a3Y0Zr6rVOKNASExcS66c6QWb2IDbgp8XaA_ErWncc0_z2GS7mVEo-rh6QBEi10yL5j0bIPcDP0csfX39AYejf8wdoZZyflSz2s/s1600/DeathEggZoneS3K.png" alt="Image 3">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrgDuTAeG7wZHYdY8POfsE24TgU2O3aCmXlJh0Xxm2CIew6-ZnST-flFnhMdPa-N1fP2T11ETpqThla60CxNfamNSqsJhrGaPpUsRx3F65lcdaTVhsjXBYZVNRCoUUDQ7GMJLr0y1TynQ/s1600/AngelIslandZone2.png" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDDT516x0gycpnEnVZW9x10VVx8vuwgV9ODPmV-BKq-MI-hTM9IYAjPIBpg7eDmJ7oW6Lph_9m7qePePI49ATOXLQ9Eavszxl6bLnjb5S1wMCNZ8HgsF76TPmCh3vcyXmExnQ4Dv173_o/s1600/MysticCaveZone.png" alt="Image 2">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3RaxRzaFan7pDxmghbMzr6r4GHSI7u4awetitvJlEW54bRj1JLLSZwZLGHyNlmzUETN0_1I35GF2xdLuDr7SYS705WWOz280kCA3oJkQ2GA0iVB4E_qCOMlBYhsOo-3FfPHRy80YkJfU/s1600/StarLightZone.png" alt="Image 3">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQF-ssNbzYwNbfaTl7HWr3VIMB9AZMHt1aTcxsGRSUa4exW5aroFHa0I23gUvDTymXnJxOLpzgTj1LRyz0tUmZ6u0vfb3X_D_qDLtEMV_4hvN6j6bvCcUZU8G0a7hllt5rgyFx_xVpn7Y/s1600/CollisionChaosPresent.png" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbZJWARYhXr0l2iZw9tQDoIwO9XcdY7ssmhvOxDX3sLOOsQks6CguMbmDtkcDsOfZXGSHkeVtr16nRipfoqTO5-FV19hon8zdvT09MUA5F3hFPuFu8hTvtIMPmUxN65ZItuzb93L2Rv38/s1600/Sky_SZ.jpg" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRvi4YPlqF81I1Z6W2g9Qh1UbKpuOrvtf5R5eWP1zv6rm9-_LBjZn1Rz95DUTUi7YYMjSLv0XC4pcfNW-N4mGpAKuuoUIe86o0nPhK5ZiGTwJeC0gVeMUWRRKtcAHkAy3jzGgIm_cOe9k/s1600/MetropolisZone.png" alt="Image 2">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6h4s2LQuWeSDKCMF4HpZaDxZ-Vjhtk5Xp5Wi9_xezl9Vqv-snJr2KUy-rbS15rue90rXz5xdN9A5sRLyJd-si5kA0dwQHKZwWlYZX5vnx73QkOtqXHxFuBvakgFIUph0hCBy7sh7mYPA/s1600/MarbleZone.gif" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_Zzc7Sr38LaL7u-qhyOgpedzuIdPLolWaB9FzJdY5aEIk_XpBK8xqlOywxCOQzNFSGS9yOlyPKImGd9vBvtVmoBwwA_PiSkybENCAmbrAce_5m8qlj2RNacxALfLof6JJcGEE4PQoy1U/s1600/CarnivalNightZone.png" alt="Image 1">
-      <img class="especial" src="https://api.triviacreator.com/v1/imgs/quiz/cover-f57199c5-890f-43e8-bd8a-5d5d5cc46c43.png" alt="Image 1">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL7rv3WmoQF3gC_hqyu-sDnuXxud01saUywOMfM5UZlYSkcyehic_7WZkziEoY9YoafuQ0Y3YCpLzaQNco_3iBHDbjvuCQWSQNjH_UCvmQWHRz9DOnhTi4LMk3XRfnlD9AVP50AgCxO8k/s1600/TrapTower.png" alt="Image 1">
-      <img src="https://cdn2.unrealengine.com/header---voxel-sonic-3840x2160-006dab5c4645.png" alt="Image 1">
+      <a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://i0.wp.com/apertaox.com/wp-content/uploads/2019/01/sonic00.jpg?w=1920&ssl=1" alt="Image 1">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbnqvwibeQKD9O2Y0cMDet4gX5_gTv3Iz3CTMLM-iaLJ18u5O8Q61xe4Z4CXsxPtuzdQUdiyGsAZHNS2NJnvj_m2qqcXeQ4sLpnVMnnLNoRJyfeCWJuSxf8OCCgb68P5RTpp7ba6fbtuA/s1600/MushroomHillZone.png" alt="Image 2">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUDlO8DY9DAuVx0EVT5LNjW20Y0-M13ZfDmDKy4RF7a3Y0Zr6rVOKNASExcS66c6QWb2IDbgp8XaA_ErWncc0_z2GS7mVEo-rh6QBEi10yL5j0bIPcDP0csfX39AYejf8wdoZZyflSz2s/s1600/DeathEggZoneS3K.png" alt="Image 3">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrgDuTAeG7wZHYdY8POfsE24TgU2O3aCmXlJh0Xxm2CIew6-ZnST-flFnhMdPa-N1fP2T11ETpqThla60CxNfamNSqsJhrGaPpUsRx3F65lcdaTVhsjXBYZVNRCoUUDQ7GMJLr0y1TynQ/s1600/AngelIslandZone2.png" alt="Image 4">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDDT516x0gycpnEnVZW9x10VVx8vuwgV9ODPmV-BKq-MI-hTM9IYAjPIBpg7eDmJ7oW6Lph_9m7qePePI49ATOXLQ9Eavszxl6bLnjb5S1wMCNZ8HgsF76TPmCh3vcyXmExnQ4Dv173_o/s1600/MysticCaveZone.png" alt="Image 5">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3RaxRzaFan7pDxmghbMzr6r4GHSI7u4awetitvJlEW54bRj1JLLSZwZLGHyNlmzUETN0_1I35GF2xdLuDr7SYS705WWOz280kCA3oJkQ2GA0iVB4E_qCOMlBYhsOo-3FfPHRy80YkJfU/s1600/StarLightZone.png" alt="Image 6">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQF-ssNbzYwNbfaTl7HWr3VIMB9AZMHt1aTcxsGRSUa4exW5aroFHa0I23gUvDTymXnJxOLpzgTj1LRyz0tUmZ6u0vfb3X_D_qDLtEMV_4hvN6j6bvCcUZU8G0a7hllt5rgyFx_xVpn7Y/s1600/CollisionChaosPresent.png" alt="Image 7">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbZJWARYhXr0l2iZw9tQDoIwO9XcdY7ssmhvOxDX3sLOOsQks6CguMbmDtkcDsOfZXGSHkeVtr16nRipfoqTO5-FV19hon8zdvT09MUA5F3hFPuFu8hTvtIMPmUxN65ZItuzb93L2Rv38/s1600/Sky_SZ.jpg" alt="Image 8">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRvi4YPlqF81I1Z6W2g9Qh1UbKpuOrvtf5R5eWP1zv6rm9-_LBjZn1Rz95DUTUi7YYMjSLv0XC4pcfNW-N4mGpAKuuoUIe86o0nPhK5ZiGTwJeC0gVeMUWRRKtcAHkAy3jzGgIm_cOe9k/s1600/MetropolisZone.png" alt="Image 9">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6h4s2LQuWeSDKCMF4HpZaDxZ-Vjhtk5Xp5Wi9_xezl9Vqv-snJr2KUy-rbS15rue90rXz5xdN9A5sRLyJd-si5kA0dwQHKZwWlYZX5vnx73QkOtqXHxFuBvakgFIUph0hCBy7sh7mYPA/s1600/MarbleZone.gif" alt="Image 10">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_Zzc7Sr38LaL7u-qhyOgpedzuIdPLolWaB9FzJdY5aEIk_XpBK8xqlOywxCOQzNFSGS9yOlyPKImGd9vBvtVmoBwwA_PiSkybENCAmbrAce_5m8qlj2RNacxALfLof6JJcGEE4PQoy1U/s1600/CarnivalNightZone.png" alt="Image 11">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL7rv3WmoQF3gC_hqyu-sDnuXxud01saUywOMfM5UZlYSkcyehic_7WZkziEoY9YoafuQ0Y3YCpLzaQNco_3iBHDbjvuCQWSQNjH_UCvmQWHRz9DOnhTi4LMk3XRfnlD9AVP50AgCxO8k/s1600/TrapTower.png" alt="Image 12">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://cdn2.unrealengine.com/header---voxel-sonic-3840x2160-006dab5c4645.png" alt="Image 13">
+</a>
+
+<a class="especial" href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://api.triviacreator.com/v1/imgs/quiz/cover-f57199c5-890f-43e8-bd8a-5d5d5cc46c43.png" alt="Image 14">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://www.powersonic.com.br/games/classicos/media/16bits/sonic1md_1.gif" alt="Image 15">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://i0.wp.com/apertaox.com/wp-content/uploads/2019/01/sonic01.jpg?resize=1024%2C576&ssl=1" alt="Image 16">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://www.powersonic.com.br/games/classicos/media/16bits/sonic1md_16.gif" alt="Image 17">
+</a>
+
+<a href="https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnMqx4vsib12kvOWuhABiqj_GFT3Mt99oy-U_L2nHaRHo6pzhyphenhyphenpuR3Shu51qGTICFtTXrUEf_PNzVwFaTIj9x7iljueufFHLzV0jvtKGGGMxjT7h4YiPZ6arZQBhGBaQOmKbcGETE-36M/s640-rw/2018072300291700-1628E0CE3F839127054B0EE36E28E52A.jpg" alt="Image 18">
+</a>
     </div>
   </main>
 
@@ -220,8 +278,13 @@
     <a href="https://br.linkedin.com/in/guilherme-perazzolo-amoretti-671630373">
       <img src="https://api.iconify.design/ph:linkedin-logo-fill.svg" alt="linkedin">
     </a>
+
     <a href="https://www.instagram.com/p.a._guilherme/">
       <img src="https://api.iconify.design/ph:instagram-logo-fill.svg" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com/p.a._guilherme/">
+      <img src="https://api.iconify.design/ph:github-logo-fill.svg" alt="Facebook">
     </a>
   </div>
 
