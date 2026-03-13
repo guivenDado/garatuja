@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guiven's Page</title>
+  <style>
+    body>* {
+      border: 4px solid rgb(0, 0, 0);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --grid-info-size: 250px;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: grid;
+      grid-template-areas:
+        "social info   content"
+        "footer footer footer";
+      grid-template-columns: auto var(--grid-info-size) 1fr;
+      grid-template-rows: 1fr 120px;
+      gap: .5rem;
+      padding: .5rem;
+      min-height: 100svh;
+      background-image: url("https://i.redd.it/green-hill-zone-from-sth1-but-its-minecraft-v0-elsduldgw7791.png?width=1163&format=png&auto=webp&s=86c0152ebc2c19395eedfbd9178bab75d6c91fe1");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      grid-area: info;
+      background-color: blue;
+
+      .thumb {
+        width: calc(var(--grid-info-size) - 20px);
+        height: calc(var(--grid-info-size) - 20px);
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        flex: none;
+        z-index: 2;
+        clip-path: 0 0, 0 100%, 100% 100%, 100% 0;
+        overflow: clip;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      section {
+        background-color: rgb(243, 222, 165);
+        width: 90%;
+        height: 100%;
+        margin-top: -4rem;
+        padding-top: 4rem;
+        z-index: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border-radius: 90px;
+        text-align: center;
+        text-decoration-color: azure;
+      }
+    }
+
+    main {
+      grid-area: content;
+      position: relative;
+      isolation: isolate;
+      padding: 5rem;
+
+      &:before {
+        content: "";
+        background-color: rgba(0, 136, 255, 0.541);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 11%;
+        margin-top: 3rem;
+        padding-top: 4rem;
+        z-index: -1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .gallery {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: minmax(180px, 230px);
+        gap: .5rem;
+
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+        }
+      }
+    }
+
+    .gallery img:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .especial {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .social {
+      grid-area: social;
+      background-color: rgba(0, 136, 255, 0.541);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+
+      img {
+        height: 2rem;
+        width: 2rem;
+        object-fit: cover;
+      }
+
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: rgba(0, 136, 255, 0.541);
+      padding: 7px;
+    }
+  </style>
+</head>
+
+<body>
+  <aside>
+    <div class="thumb">
+      <img src="https://i.pinimg.com/736x/1a/7d/f6/1a7df62f5b2d906023a7ac1686e8acc1.jpg" alt="Sonic">
+    </div>
+    <section> 
+      ouriço antropomórfico conhecido pela sua capacidade de correr 
+      mais rápido do que a velocidade do som, daí o seu nome. Como 
+      o nome da sua espécie indica, Sonic pode enrolar-se numa bola 
+      destrutiva, principalmente para atacar inimigos.
+      Sempre em movimento, Sonic leva uma vida cheia de aventuras. 
+      Passou a maior parte da sua vida a viajar pelo mundo e além, 
+      geralmente acompanhado pelo seu melhor amigo, Tails. Nas suas viagens, 
+      defendeu o seu mundo e outros de várias ameaças, especialmente do seu 
+      arqui-inimigo, o Doutor Eggman. Descrito como sendo "como o vento", Sonic 
+      é descontraído e sincero, mas também impaciente e temperamental.
+      O primeiro jogo foi lançado em 23 de junho de 1991 para o console Mega Drive. 
+      Ele marca a estreia de Sonic. O jogo é muito simples e se trata de Sonic cruzando 
+      diferentes zonas do planeta Mobius: Green Hill Zone, Marble Zone, Spring Yard Zone, 
+      Labyrinth Zone, Star Light Zone e Scrap Brain Zone, a base de Eggman. Todas as zonas 
+      estão cheias de Badniks, robôs de porte médio cuja fonte de energia eram os Flickies 
+      do planeta Mobius e cuja missão era impedir Sonic de derrotar Eggman e conseguir as 
+      esmeraldas do caos. No final de cada zona podemos encontrar o Eggman tentando parar 
+      Sonic, já que isso os Badniks não conseguiram (risos).
+      Após a última batalha, Sonic consegue as 6 Esmeraldas do Caos e as lança no ar. 
+      Subitamente, ele é teletransportado para a zona de Hilltop Heights, no fangame 
+      Sonic Before the Sequel, cujos eventos explicam o que acontece entre o primeiro 
+      e segundo jogos da franquia.
+       Além da velocidade, Sonic possui reflexos rápidos e pode transformar-se em formas 
+       poderosas como Super Sonic, Hyper Sonic, e Darkspine Sonic ao longo de vários jogos.
+       É conhecido por ser aventureiro, descontraído, confiante e ter um forte senso de justiça.
+       Seus principais aliados incluem Miles "Tails" Prower, Knuckles e Amy Rose, enquanto seu 
+       maior inimigo é o Dr. Eggman.
+        Em jogos 3D, ele executa ataques como o "Homing Attack" e "Light Speed Dash". 
+    </section>
+  </aside>
+  <main>
+    <article>
+      <h1>Sonic The Hedgehog</h1>
+      <p>
+        Sonic the Hedgehog é uma franquia de jogos eletrônicos de plataforma criada por Yuji Naka e Naoto
+        Oshima da equipe Sonic Team, da Sega, sendo atualmente administrada por Takashi Iizuka. O primeiro
+        jogo da série Sonic, lançado em 1991, foi concebido pela divisão da Sega, Sonic Team após um pedido
+        para um novo mascote.
+      </p>
+    </article>
+    <div class="gallery">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisshS3au3g_bNNDE0yYPr7VRwkdvkTusz84RWl7INa2ML0V_L4pafzadh-vRCPXqBR7IQXzn9MKG0ZUkCTWfMky1IpTKUZf6_bt9rN9LcNNzQH8Tq6zAZLIfvRAw0w7ZVSeq8cHImyHzI/s640-rw/Sonic+Mania_20170816222752.jpg" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjbnqvwibeQKD9O2Y0cMDet4gX5_gTv3Iz3CTMLM-iaLJ18u5O8Q61xe4Z4CXsxPtuzdQUdiyGsAZHNS2NJnvj_m2qqcXeQ4sLpnVMnnLNoRJyfeCWJuSxf8OCCgb68P5RTpp7ba6fbtuA/s1600/MushroomHillZone.png" alt="Image 2">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUDlO8DY9DAuVx0EVT5LNjW20Y0-M13ZfDmDKy4RF7a3Y0Zr6rVOKNASExcS66c6QWb2IDbgp8XaA_ErWncc0_z2GS7mVEo-rh6QBEi10yL5j0bIPcDP0csfX39AYejf8wdoZZyflSz2s/s1600/DeathEggZoneS3K.png" alt="Image 3">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrgDuTAeG7wZHYdY8POfsE24TgU2O3aCmXlJh0Xxm2CIew6-ZnST-flFnhMdPa-N1fP2T11ETpqThla60CxNfamNSqsJhrGaPpUsRx3F65lcdaTVhsjXBYZVNRCoUUDQ7GMJLr0y1TynQ/s1600/AngelIslandZone2.png" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDDT516x0gycpnEnVZW9x10VVx8vuwgV9ODPmV-BKq-MI-hTM9IYAjPIBpg7eDmJ7oW6Lph_9m7qePePI49ATOXLQ9Eavszxl6bLnjb5S1wMCNZ8HgsF76TPmCh3vcyXmExnQ4Dv173_o/s1600/MysticCaveZone.png" alt="Image 2">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3RaxRzaFan7pDxmghbMzr6r4GHSI7u4awetitvJlEW54bRj1JLLSZwZLGHyNlmzUETN0_1I35GF2xdLuDr7SYS705WWOz280kCA3oJkQ2GA0iVB4E_qCOMlBYhsOo-3FfPHRy80YkJfU/s1600/StarLightZone.png" alt="Image 3">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQF-ssNbzYwNbfaTl7HWr3VIMB9AZMHt1aTcxsGRSUa4exW5aroFHa0I23gUvDTymXnJxOLpzgTj1LRyz0tUmZ6u0vfb3X_D_qDLtEMV_4hvN6j6bvCcUZU8G0a7hllt5rgyFx_xVpn7Y/s1600/CollisionChaosPresent.png" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbZJWARYhXr0l2iZw9tQDoIwO9XcdY7ssmhvOxDX3sLOOsQks6CguMbmDtkcDsOfZXGSHkeVtr16nRipfoqTO5-FV19hon8zdvT09MUA5F3hFPuFu8hTvtIMPmUxN65ZItuzb93L2Rv38/s1600/Sky_SZ.jpg" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRvi4YPlqF81I1Z6W2g9Qh1UbKpuOrvtf5R5eWP1zv6rm9-_LBjZn1Rz95DUTUi7YYMjSLv0XC4pcfNW-N4mGpAKuuoUIe86o0nPhK5ZiGTwJeC0gVeMUWRRKtcAHkAy3jzGgIm_cOe9k/s1600/MetropolisZone.png" alt="Image 2">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6h4s2LQuWeSDKCMF4HpZaDxZ-Vjhtk5Xp5Wi9_xezl9Vqv-snJr2KUy-rbS15rue90rXz5xdN9A5sRLyJd-si5kA0dwQHKZwWlYZX5vnx73QkOtqXHxFuBvakgFIUph0hCBy7sh7mYPA/s1600/MarbleZone.gif" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_Zzc7Sr38LaL7u-qhyOgpedzuIdPLolWaB9FzJdY5aEIk_XpBK8xqlOywxCOQzNFSGS9yOlyPKImGd9vBvtVmoBwwA_PiSkybENCAmbrAce_5m8qlj2RNacxALfLof6JJcGEE4PQoy1U/s1600/CarnivalNightZone.png" alt="Image 1">
+      <img class="especial" src="https://api.triviacreator.com/v1/imgs/quiz/cover-f57199c5-890f-43e8-bd8a-5d5d5cc46c43.png" alt="Image 1">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL7rv3WmoQF3gC_hqyu-sDnuXxud01saUywOMfM5UZlYSkcyehic_7WZkziEoY9YoafuQ0Y3YCpLzaQNco_3iBHDbjvuCQWSQNjH_UCvmQWHRz9DOnhTi4LMk3XRfnlD9AVP50AgCxO8k/s1600/TrapTower.png" alt="Image 1">
+      <img src="https://cdn2.unrealengine.com/header---voxel-sonic-3840x2160-006dab5c4645.png" alt="Image 1">
+    </div>
+  </main>
+
+  <div class="social">
+    <a href="https://br.linkedin.com/in/guilherme-perazzolo-amoretti-671630373">
+      <img src="https://api.iconify.design/ph:linkedin-logo-fill.svg" alt="linkedin">
+    </a>
+    <a href="https://www.instagram.com/p.a._guilherme/">
+      <img src="https://api.iconify.design/ph:instagram-logo-fill.svg" alt="Facebook">
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Guiven. All rights reserved.</p>
+    <h4 > fontes: https://tkoc.fandom.com/pt-br/wiki/Sonic_the_Hedgehog | 
+      https://www.gameblast.com.br/2018/03/fases-gostariamos-ver-sonic-mania-plus.html |
+      https://sonic-the-hedgehog.fandom.com/pt-br/wiki/A_Hist%C3%B3ria_do_Sonic |
+      https://liberproeliis.fandom.com/pt-br/wiki/Sonic_the_Hedgehog</h4>
+  </footer>
+</body>
+
+</html>
