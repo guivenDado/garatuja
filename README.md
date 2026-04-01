@@ -13,7 +13,7 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
   </aside>
 </body>
 
-// criamos uma imagem do sonic, com nome de classe "thumb".
+criamos uma imagem do sonic, com nome de classe "thumb".
 =====================
 
 ## [CSS]
@@ -25,7 +25,7 @@ CSS é uma linguagem de marcação feita para estilizar o HTML.
         border-radius: 50%;
       }
 
-// aqui, modificamos classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
+aqui, modificamos classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
 =====================
 
 ## [COMPARAÇÃO DE LINGUAGEM]
