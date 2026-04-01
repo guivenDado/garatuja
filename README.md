@@ -8,12 +8,12 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 
 CSS é uma linguagem de marcação feita para estilizar o HTML.
 
-| COMPARAÇÃO DE LINGUAGEM | Typescript                                           | JavaScript                                | Java                                   |
-| ----------------------- | ---------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
-| Função                  | foi me passado como "sub-rotina", executa um código fora do código principal. | foi me passado como "sub-rotina", executa um código fora do código principal.                    |  foi me passado como "sub-rotina", executa um código fora do código principal.                                       |
-| Método                  | foi me passado como "sub-rotina", executa um código fora do código principal.                    |                                        |
-| Variável                |                                                      |                                           |                                        |
-| Classe                  |                                                      |                                           |                                        |
-| Função                  |                                                      |                                           |                                        |
-| Get                     |                                                      |                                           |                                        |
-| Set                     |                                                      |                                           |                                        |
+| COMPARAÇÃO DE LINGUAGEM | Typescript                                           | JavaScript                                | Java                                        |
+| ----------------------- | ---------------------------------------------------- | ----------------------------------------- | ------------------------------------------- |
+| Função                  | é um bloco de código que executa uma tarefa          | bloco de código que executa uma tarefa    | executa um método fora do código principal. |
+| Método                  |                                                      |                                           |                                             |
+| Variável                |                                                      |                                           |                                             |
+| Classe                  |                                                      |                                           |                                             |
+| Função                  |                                                      |                                           |                                             |
+| Get                     |                                                      |                                           |                                             |
+| Set                     |                                                      |                                           |                                             |
