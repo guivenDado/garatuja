@@ -11,7 +11,7 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 <body>
   <aside>
     <div class="thumb">
-      <img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic)>
+      <img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic">
     </div>
   </aside>
 </body>
