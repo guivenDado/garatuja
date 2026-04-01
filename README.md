@@ -10,8 +10,7 @@ CSS é uma linguagem de marcação feita para estilizar o HTML.
 
 | COMPARAÇÃO DE LINGUAGEM | Typescript                                           | JavaScript                                | Java                                   |
 | ----------------------- | ---------------------------------------------------- | ----------------------------------------- | -------------------------------------- |
-| Função                  | foi me passado como "sub-rotina", executa um código  |                                           |                                        |
-|                         | fora do código principal.                            |                                           |                                        |
+| Função                  | foi me passado como "sub-rotina", executa um código fora do código principal.                    |                                        |
 | Método                  | foi me passado como "sub-rotina", executa um código  |                                           |                                        |
 |                         | fora do código principal.                            |                                           |                                        |
 | Variável                |                                                      |                                           |                                        |
