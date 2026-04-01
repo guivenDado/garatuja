@@ -22,10 +22,9 @@ CSS é uma linguagem de marcação feita para estilizar o HTML.
 
 ## [PERGUNTAS E RESPOSTAS]
 
-| Pergunta               | Resposta                            |
-|----------              |---------                            |
-| O que é POO?           | Paradigma baseado em objetos        |
-| Encapsulamento         | Esconder detalhes internos          |
-| Polimorfismo           | Um método com vários comportamentos |
-| this                   | Referência ao objeto atual          |
-| private                | Acesso apenas dentro da classe      |
+| Pergunta               | Resposta                                  |
+|----------              |---------                                  |
+| O que é POO?           | Paradigma baseado em objetos              |
+| Encapsulamento         | Esconder detalhes internos, EX: "private" |
+| this                   | Referência ao objeto atual                |
+| private                | Acesso apenas dentro da classe            |
