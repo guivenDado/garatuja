@@ -19,11 +19,15 @@ criamos uma imagem do sonic, com nome de classe "thumb".
 ## [CSS]
 
 CSS é uma linguagem de marcação feita para estilizar o HTML.
+<p>EXEMPLO:</p>
 
-EXEMPLO:
+<pre>
+<code>
 .thumb {
-     border-radius: 50%;
-     }
+    border-radius: 50%;
+}
+</code>
+</pre>
 
 aqui, modificamos classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
 
