@@ -6,13 +6,17 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 
 <p>EXEMPLO:</p>
 
-&lt;body&gt;<br>
-&lt;aside&gt;<br>
-&nbsp;&nbsp;&lt;div class="thumb"&gt;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic"&gt;<br>
-&nbsp;&nbsp;&lt;/div&gt;<br>
-&lt;/aside&gt;<br>
-&lt;/body&gt;
+<pre>
+<code>
+<body>
+  <aside>
+    <div class="thumb">
+      <img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic)>
+    </div>
+  </aside>
+</body>
+</code>
+</pre>
 
 criamos uma imagem do sonic, com nome de classe "thumb".
 
