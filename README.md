@@ -8,13 +8,13 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 
 <pre>
 <code>
-<body>
-  <aside>
-    <div class="thumb">
-      <img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic">
-    </div>
-  </aside>
-</body>
+&lt;body&gt;
+  &lt;aside&gt;
+    &lt;div class="thumb"&gt;
+      &lt;img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic"&gt;
+    &lt;/div&gt;
+  &lt;/aside&gt;
+&lt;/body&gt;
 </code>
 </pre>
 
