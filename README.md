@@ -4,9 +4,29 @@
 
 HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui comandos claros e relativamente simples, exigindo apenas a compreensão de suas funcionalidades mais básicas para dar vida a diversas ideias.
 
+====== EXEMPLO ======
+<body>
+  <aside>
+    <div class="thumb">
+      <img src="https://pbs.twimg.com/media/F02860mXoAIe2wG.jpg" alt="Sonic">
+    </div>
+  </aside>
+</body>
+
+// criamos uma imagem do sonic, com nome de classe "thumb".
+=====================
+
 ## [CSS]
 
 CSS é uma linguagem de marcação feita para estilizar o HTML.
+
+====== EXEMPLO ======
+.thumb {
+        border-radius: 50%;
+      }
+
+// aqui, modificamos classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
+=====================
 
 ## [COMPARAÇÃO DE LINGUAGEM]
 
