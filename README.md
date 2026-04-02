@@ -33,7 +33,7 @@ CSS é uma linguagem de marcação feita para estilizar o HTML.
 </code>
 </pre>
 
-aqui, modificamos classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
+aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a em um círculo.
 
 ## [COMPARAÇÃO DE LINGUAGEM]
 
