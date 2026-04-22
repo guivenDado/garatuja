@@ -37,15 +37,17 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 
 ## [COMPARAÇÃO DE LINGUAGEM]
 
-| COMPARAÇÃO DE LINGUAGEM | Typescript                                           | JavaScript                                | Java                                        |
-| ----------------------- | ---------------------------------------------------- | ----------------------------------------- | ------------------------------------------- |
-| Função                  | é um bloco de código que executa uma tarefa          | bloco de código que executa uma tarefa    | executa um método fora do código principal. |
-| Método                  |                                                      |                                           | executa um método fora do código principal  |
-| Variável                |                                                      |                                           |                                             |
-| Classe                  |                                                      |                                           |                                             |
-| Função                  |                                                      |                                           |                                             |
-| Get                     |                                                      |                                           |                                             |
-| Set                     |                                                      |                                           |                                             |
+## 📚 Comparação de Linguagem
+
+| Comparação | TypeScript | JavaScript | Java |
+|------------|------------|------------|------|
+| **Função** | Pedaço de código que faz uma tarefa, com tipo definido. | Pedaço de código que faz uma tarefa, sem tipo fixo. | Não tem função sozinha, tudo fica dentro da classe. |
+| **Método** | Função que está dentro de uma classe. | Função dentro de um objeto ou classe. | Função que fica dentro da classe. |
+| **Variável** | Precisa dizer o tipo (`string`, `number`...). | O tipo muda sozinho durante o programa. | Precisa dizer o tipo sempre. |
+| **Classe** | Modelo para criar objetos, com tipos definidos. | Modelo para criar objetos, sem tipos fixos. | Base da linguagem, tudo gira em torno de classes. |
+| **Objeto** | Algo criado a partir da classe, seguindo os tipos. | Conjunto de informações em formato chave e valor. | Algo criado a partir de uma classe. |
+| **Get** | Pega o valor de uma variável da classe. | Pega o valor de uma informação do objeto. | Método para pegar valor de variável privada. |
+| **Set** | Muda o valor de uma variável da classe. | Muda o valor de uma informação do objeto. | Método para mudar valor de variável privada. |
 
 ## [PERGUNTAS E RESPOSTAS]
 
