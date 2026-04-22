@@ -37,8 +37,6 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 
 ## [COMPARAÇÃO DE LINGUAGEM]
 
-## 📚 Comparação de Linguagem
-
 | Comparação | TypeScript | JavaScript | Java |
 |------------|------------|------------|------|
 | **Função** | Pedaço de código que faz uma tarefa, com tipo definido. | Pedaço de código que faz uma tarefa, sem tipo fixo. | Não tem função sozinha, tudo fica dentro da classe. |
