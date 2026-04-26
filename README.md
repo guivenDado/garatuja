@@ -65,4 +65,4 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 | O que é POO?           | Paradigma baseado em objetos              |
 | Encapsulamento         | Esconder detalhes internos, EX: "private" |
 | this                   | Referência ao objeto atual                |
-| private                | Acesso apenas dentro da classe            |
+| private                | Acessável apenas dentro da classe         |
