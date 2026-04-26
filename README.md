@@ -49,7 +49,7 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 | **Construtor** | Método especial chamado ao criar o objeto, com tipos definidos. 
 
 ## [CONCEITOS EXTRA]
-
+| conceitos | |
 | **Herança** | Uma classe pode herdar de outra usando `extends`, mantendo os tipos. 
 | **Encapsulamento** | Controle de acesso usando `private`, `public` e tipos. 
 | **Polimorfismo** | Mesmo método pode ter comportamentos diferentes com tipagem. 
