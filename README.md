@@ -47,7 +47,10 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 | **Get** | Pega o valor de uma variável da classe. | Pega o valor de uma informação do objeto. | Método para pegar valor de variável privada. |
 | **Set** | Muda o valor de uma variável da classe. | Muda o valor de uma informação do objeto. | Método para mudar valor de variável privada. |
 | **Construtor** | Método especial chamado ao criar o objeto, com tipos definidos. 
-| **Herança** | Uma classe pode herdar de outra usando `extends`, mantendo os tipos. | Uma classe pode herdar de outra usando `extends`. | Uma classe herda de outra usando `extends`. |
+
+## [CONCEITOS EXTRA]
+
+| **Herança** | Uma classe pode herdar de outra usando `extends`, mantendo os tipos. 
 | **Encapsulamento** | Controle de acesso usando `private`, `public` e tipos. 
 | **Polimorfismo** | Mesmo método pode ter comportamentos diferentes com tipagem. 
 
