@@ -6,7 +6,7 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 
 | lembrar | HTML |
 |----------|------------|
-| **texto** | <h1> - <h4> | <title> | <p> |
+| **texto** | <h1> até <h4> | <title> | <p> |
 | **base** | <body> | <main> | <html> | <head> |
 | **definindo** | <!DOCTYPE html> | <meta charset="UTF-8"> |
 | **linguagem** | <html lang="pt-br"> |
@@ -38,8 +38,6 @@ CSS é uma linguagem de marcação feita para estilizar o HTML.
 | **sintáxe objeto** | "#" para estilizar um objeto |
 | **classe** | nome normal para puxar a classe |
 | **:hover** | quando o cursos está em cima |
-| **linguagem** | <html lang="pt-br"> |
-| **importar o CSS/JS** | <link rel="stylesheet" href="nome.css">   |   <script src="./nome.js"></script> |
 
 <p>EXEMPLO:</p>
 
