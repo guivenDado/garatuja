@@ -4,6 +4,16 @@
 
 HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui comandos claros e relativamente simples, exigindo apenas a compreensão de suas funcionalidades mais básicas para dar vida a diversas ideias.
 
+=======================================
+
+texto: <h1> - <h4> | <title> | <p>
+base: <body> | <main> | <html> | <head>
+definindo: <!DOCTYPE html> | <meta charset="UTF-8">
+linguagem: <html lang="pt-br">
+importar o CSS/JS: <link rel="stylesheet" href="nome.css">   |   <script src="./nome.js"></script>
+
+=======================================
+
 <p>EXEMPLO:</p>
 
 <pre>
@@ -23,6 +33,17 @@ criamos uma imagem do sonic, com nome de classe "thumb".
 ## [CSS]
 
 CSS é uma linguagem de marcação feita para estilizar o HTML.
+
+=======================================
+
+sintáxe:
+
+"#" para estilizar um objeto
+nome normal para puxar a classe
+":hover" quando o cursos está em cima
+
+=======================================
+
 <p>EXEMPLO:</p>
 
 <pre>
