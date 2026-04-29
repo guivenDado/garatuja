@@ -6,11 +6,11 @@ HTML é, para mim, uma linguagem de marcação altamente intuitiva. Possui coman
 
 | lembrar | HTML |
 |----------|------------|
-| **texto** | "<h1>" até "<h4>" | "<title>" | "<p>" |
-| **base** | <body> | <main> | <html> | <head> |
-| **definindo** | <!DOCTYPE html> | <meta charset="UTF-8"> |
+| **texto** | <h1> até <h4>, <title>, <p> |
+| **base** | <body>,  <main>,  <html> e <head> |
+| **definindo** | <!DOCTYPE html>  <meta charset="UTF-8"> |
 | **linguagem** | <html lang="pt-br"> |
-| **importar o CSS/JS** | <link rel="stylesheet" href="nome.css">   |   <script src="./nome.js"></script> |
+| **importar o CSS/JS** | <link rel="stylesheet" href="nome.css"> e <script src="./nome.js"></script> |
 
 <p>EXEMPLO:</p>
 
