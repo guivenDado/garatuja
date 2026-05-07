@@ -82,3 +82,10 @@ aqui, modificamos a classe "thumb" para diminuir seu raio na metade, tornando-a 
 | Encapsulamento         | Esconder detalhes internos, EX: "private" |
 | this                   | Referência ao objeto atual                |
 | private                | Acessável apenas dentro da classe         |
+
+
+# [AULA: 07/05/26]
+
+criei um token de acesso vitalício, também criei 
+um repositório e aprendi a iniciar esse repositório 
+sempre do zero.
